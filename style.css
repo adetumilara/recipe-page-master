@@ -1,0 +1,252 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 10px;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading{
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.content p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.mainContainer{
+  width: 70%;
+}
+
+.container1{
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.container1 p{
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  width: 50%;  
+  margin-left: .5rem;
+}
+
+.container1 img{
+  width: 100%;
+}
+
+.content{
+  display: flex;
+  justify-content: flex-start;
+  align-items: first baseline;
+}
+
+
+/* Container 2 */
+
+.ingredients h2, .container3 h3{
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.9rem;
+
+}
+
+.ingredients h4{
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.6rem;
+
+}
+
+.ingredients p, .content1 p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.bold{
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+
+.container2{
+  display: flex;
+  margin-top: 2rem;
+}
+
+.ingredients{
+  width: 80%;
+}
+
+.ingredients h4{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  
+
+
+}
+
+.box{
+  padding: 0.5rem;
+  border: 1px gray solid;
+  margin-right: 0.5rem;
+}
+
+.checkbox{
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.servings{
+  padding: 4rem;
+  border: 1px rgba(255, 255, 255, 1) solid;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.fa-solid{
+  font-size: 1.5rem;
+  margin-right: .5rem;
+  color:rgba(242, 153, 74, 1);
+}
+
+.orange{
+  color:rgba(242, 153, 74, 1);
+}
+
+.fa-regular{
+  font-size: 1.5rem;
+  margin-right: .5rem;
+}
+
+.boxes{
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.boxes h4{
+  font-family: Montserrat;
+  font-size: 7px;
+  font-weight: 700;
+  color: rgba(189, 189, 189, 1);
+}
+
+.boxes h5{
+  font-family: Montserrat;
+  font-size: 9px;
+}
+
+/* Container 3 */
+
+.container3{
+  margin-top: 2rem;
+}
+
+.container{
+  width: 80%;
+}
+
+.content1{
+  display: flex;
+  align-items: first baseline;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.content1 p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.numbering{
+  padding: .7rem;
+  background-color: rgba(242, 153, 74, 1) ;
+  margin-right: 1rem;
+  border-radius: 10%;
+  color:rgba(255, 255, 255, 1);
+  
+}
+
+@media only screen and (max-width: 775px){
+  .mainContainer{
+    width: 90%;
+  }
+  .heading{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  .content p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+
+  .container1 p{
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    width: 100%;  
+    margin-left: .5rem;
+  }
+  .container2{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 2rem;
+  }
+
+  .servings{
+    padding: 0rem;
+    border: 0px rgba(255, 255, 255, 1) solid;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0);
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .servings> *:first-child{
+    grid-column: 1 / span 3;
+  }
+
+  .ingredients{
+    width: 100%;
+  }
+  
+  .container{
+    width: 100%;
+  }
+  
+  .ingredients h2, .content1 h3{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+   font-size: 1.6rem;
+  
+  }
+
+  .ingredients h4{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.4rem;
+  
+  }
+  
+}
